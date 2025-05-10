@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="login-card" id="auth-section">
+        <div class="color-bar">
+            <span class="bar bar1"></span>
+            <span class="bar bar2"></span>
+            <span class="bar bar3"></span>
+            <span class="bar bar4"></span>
+            <span class="bar bar5"></span>
+        </div>
+        <h2 id="form-title">Login</h2>
+        <form id="loginForm">
+            <div class="form-group">
+                <input type="text" id="username" placeholder="Username" required>
+            </div>
+            <div class="form-group">
+                <input type="password" id="password" placeholder="Password" required>
+            </div>
+            <button type="submit" class="login-btn">Sign in</button>
+            <p class="signup-link">
+                Don't have an account? <a href="#" id="show-register">Register</a>
+            </p>
+        </form>
+        <form id="registerForm" style="display:none;">
+            <div class="form-group">
+                <input type="text" id="reg-username" placeholder="Username" required>
+            </div>
+            <div class="form-group">
+                <input type="email" id="reg-email" placeholder="Email" required>
+            </div>
+            <div class="form-group">
+                <input type="password" id="reg-password" placeholder="Password" required>
+            </div>
+            <div class="form-group">
+                <input type="password" id="reg-confirm-password" placeholder="Confirm Password" required>
+            </div>
+            <button type="submit" class="login-btn">Register</button>
+            <p class="signup-link">
+                Already have an account? <a href="#" id="show-login">Login</a>
+            </p>
+        </form>
+    </div>
+    <div class="login-card" id="dashboard" style="display:none;">
+        <nav class="dashboard-nav">
+            <span class="nav-home">Home</span>
+            <span class="nav-icons">
+                <span class="nav-icon user-icon"></span>
+                <span class="nav-icon settings-icon"></span>
+                <span class="nav-icon theme-icon"></span>
+            </span>
+        </nav>
+        <main class="dashboard-main">
+            <h1 class="dashboard-title">Dashboard</h1>
+            <p id="welcome-message" class="dashboard-welcome">Welcome!</p>
+            <button id="logout-btn" class="dashboard-logout-btn">Logout</button>
+        </main>
+    </div>
+    <div id="loading-spinner" class="spinner-overlay" style="display:none;">
+        <div class="spinner"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
